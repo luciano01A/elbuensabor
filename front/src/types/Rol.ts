@@ -1,0 +1,7 @@
+export enum Rol{
+    ADMINISTRADOR = "ADMINISTRADOR",
+    COCINERO = "COCINERO",
+    DELIVERY = "DELIVERY",
+    CAJERO = "CAJERO",
+    CLIENTE = "CLIENTE"
+}

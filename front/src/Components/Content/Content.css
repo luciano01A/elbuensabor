@@ -1,0 +1,28 @@
+.Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;  
+    width: 100%;
+    position: relative;
+    flex-grow: 1;
+}  
+
+@media (min-width: 576px) {
+    .Content {
+        flex-direction: row;
+        position: fixed;
+        left: 3%;
+        bottom: 10%;
+        top: 20%;
+        right: 3%;
+        width: 94%;
+    }    
+}
+
+@media (max-width: 768px) {
+    .Content>.customContentBox {
+        width: 100% !important;
+    }
+}

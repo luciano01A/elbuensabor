@@ -1,0 +1,7 @@
+hr.Hr {
+    border-width: 1px;
+    height: 0px;
+    border-color: #F1E8E6AA;
+    /*background-image: linear-gradient(to right, #F1E8E600, #F1E8E6AA, #F1E8E600);*/
+    width: 90%;
+}

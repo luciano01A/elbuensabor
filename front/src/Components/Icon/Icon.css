@@ -1,0 +1,78 @@
+.Icon {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Icon>div {
+    height: 100%;
+    aspect-ratio: 1;
+    background-size: contain;
+}
+
+.Icon>.Clickable {
+    cursor: pointer;
+    transition: all 100ms;
+}
+
+.Icon>.Clickable:active {
+    transform: scale(0.9);
+}
+
+.Icon>.Clickable:hover {
+    filter: brightness(1.5);
+}
+
+
+.Icon>.big {
+    height: 50px;
+    width: 50px;
+}
+
+.Icon>.medium {
+    height: 30px;
+    width: 30px;
+}
+
+.Icon>.small {
+    height: 20px;
+    width: 20px;
+}
+
+.Icon>.smaller {
+    height: 20px;
+    width: 20px;
+}
+
+.Icon>.default {
+    height: 100%;
+    aspect-ratio: 1;
+}
+
+@media (min-width: 576px) {
+    .Icon>.big {
+        height: 75px;
+        width: 75px;
+    }
+    
+    .Icon>.medium {
+        height: 50px;
+        width: 50px;
+    }
+    
+    .Icon>.small {
+        height: 30px;
+        width: 30px;
+    }
+    
+    .Icon>.smaller {
+        height: 20px;
+        width: 20px;
+    }
+
+    .Icon>.default {
+        height: 100%;
+        aspect-ratio: 1;
+    }
+    
+}

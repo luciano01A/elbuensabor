@@ -1,0 +1,94 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+
+@media not ((min-width: 576px)) {
+  .App {
+    overflow-y: auto;
+  }
+
+  ::-webkit-scrollbar { 
+    display: none; 
+  }
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  filter: blur(6px);
+  top: 0;
+  left: 0;
+}
+
+.bg>div {
+  background-image: url("bg.jpg");
+  filter: brightness(0.6);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.1);
+}
+
+
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-corner {
+  display: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+
+::-webkit-scrollbar-track:vertical {
+  -webkit-border-radius: 0 12px 12px 0;
+  border-radius: 0 12px 12px 0;
+}
+
+::-webkit-scrollbar-track:horizontal {
+  -webkit-border-radius: 0 0 12px 12px;
+  border-radius: 0 0 12px 12px;
+}
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  background: #956A92; 
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  -webkit-border-radius: 0 12px 12px 0;
+  border-radius: 0 12px 12px 0;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  -webkit-border-radius: 0 0 12px 12px;
+  border-radius: 0 0 12px 12px;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+background: rgba(53, 29, 49, 0.40); 
+}
+
+
+
+
+/* Placeholders */
+::placeholder, .placeholder {
+  color: gray;
+}

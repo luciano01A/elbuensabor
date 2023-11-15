@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+
+.Text {
+    color: #F1E8E6;
+    font-family: League Gothic;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Text>div::selection, a.Link::selection{
+    background-color: #F1E8E6;
+    color: rgb(53, 29, 49);
+}
+
+a.Link:hover {
+    text-decoration: underline;
+    color: #f55951;
+}
+
+a.Link {
+    color: #F1E8E6;
+}
+
+a.Link.NotUnderlined {
+    text-decoration: none;
+}
+
+.Text.big {
+    font-size: 50px;
+}
+
+.Text.medium {
+    font-size: 30px;
+}
+
+.Text.small {
+    font-size: 20px;
+}
+
+.Text.smaller {
+    font-size: 20px;
+}
+
+
+
+@media (min-width: 576px) {
+    .Text.big {
+        font-size: 75px;
+    }
+    
+    .Text.medium {
+        font-size: 50px;
+    }
+    
+    .Text.small {
+        font-size: 30px;
+    }
+    
+    .Text.smaller {
+        font-size: 20px;
+    }
+    
+}
